@@ -6,6 +6,7 @@ import Counter from "./components/Counter";
 import "./App.css";
 
 class App extends React.Component {
+  // incluir props como arg en el constructor si el componente tiene que recibir props
   constructor() {
     super();
     this.state = {
