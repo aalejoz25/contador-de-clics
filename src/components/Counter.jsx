@@ -1,8 +1,10 @@
 import React from "react";
 import "./../stylesheets/Counter.css";
 
-function Counter({ clickNumber }) {
-  return <div className="counter">{clickNumber}</div>;
+class Counter extends React.Component {
+  render() {
+    return <div className="counter">{this.props.clickNumber}</div>;
+  }
 }
 
 export default Counter;

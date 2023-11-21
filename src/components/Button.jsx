@@ -1,15 +1,17 @@
 import React from "react";
 import "./../stylesheets/Button.css";
 
-function Button({ text, isClickButton, handleClick }) {
-  return (
-    <button
-      className={isClickButton ? "click-button" : "reset-button"}
-      onClick={handleClick}
-    >
-      {text}
-    </button>
-  );
+class Button extends React.Component {
+  render() {
+    return (
+      <button
+        className={this.props.isClickButton ? "click-button" : "reset-button"}
+        onClick={this.props.handleClick}
+      >
+        {this.props.Buttontext}
+      </button>
+    );
+  }
 }
 
 export default Button;
