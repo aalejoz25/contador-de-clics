@@ -8,7 +8,7 @@ class Button extends React.Component {
         className={this.props.isClickButton ? "click-button" : "reset-button"}
         onClick={this.props.handleClick}
       >
-        {this.props.Buttontext}
+        {this.props.text}
       </button>
     );
   }
